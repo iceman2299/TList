@@ -1,6 +1,0 @@
-D:/Сортировка/Файлы/Учебное/Проги/TList/build/CMakeFiles/ALL_BUILD.dir
-D:/Сортировка/Файлы/Учебное/Проги/TList/build/CMakeFiles/ZERO_CHECK.dir
-D:/Сортировка/Файлы/Учебное/Проги/TList/build/src/CMakeFiles/TList.dir
-D:/Сортировка/Файлы/Учебное/Проги/TList/build/samples/CMakeFiles/sample_prime_numbers.dir
-D:/Сортировка/Файлы/Учебное/Проги/TList/build/gtest/CMakeFiles/gtest.dir
-D:/Сортировка/Файлы/Учебное/Проги/TList/build/test/CMakeFiles/test_TList.dir
