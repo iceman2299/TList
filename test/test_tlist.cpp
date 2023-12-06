@@ -1,20 +1,20 @@
 #include "Tlist.h"
 
 #include <gtest.h>
+
+TEST(List, can_create_list_with_zero_length)
+{
+  ASSERT_NO_THROW(TList<int> q());
+}
+
 /*
-TEST(Queue, can_create_queue_with_positive_length)
+TEST(List, can_copy)
 {
-  ASSERT_NO_THROW(TQueue<int> q(3));
-}
-
-
-TEST(Queue, can_get_count)
-{
-  TQueue<int> q(3);
-
-  EXPECT_EQ(0, q.GetCount());
-}
-
+  TList<int> q();
+  
+  ASSERT_NO_THROW(TList<int> copy(&q));
+}*/
+/*
 TEST(Queue, can_create_copy)
 {
     TQueue<int> q(4);

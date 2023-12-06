@@ -3,7 +3,13 @@
 #include "Tlist.h"
 
 
-
+template <class T>
+TList<T>::TList()
+{
+  count = 0;
+  begin = nullptr;
+  end = nullptr;
+}
 template <class T>
 TList<T>::TList(const TList<T>& p)
 {
@@ -15,7 +21,7 @@ TList<T>::TList(const TList<T>& p)
   }
   else
   {
-    begin = new TListNode<T>(*p.begin);
+    begin = new TListNode<T>(p.begin);
     TListNode<T>* temp = begin;
     TListNode<T>* temp2 = p.begin;
     while (temp2->GetNext() != p.begin)
