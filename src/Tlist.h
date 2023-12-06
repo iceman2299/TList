@@ -19,5 +19,6 @@ public:
   void DeleteBegin();
   void DeleteEnd();
   TListIterator<T> GetBegin();
+  TList<T>& operator=(const TList<T>& p)
 };
 
