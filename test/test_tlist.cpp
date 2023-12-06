@@ -1,7 +1,7 @@
 #include "Tlist.h"
 
 #include <gtest.h>
-
+/*
 TEST(Queue, can_create_queue_with_positive_length)
 {
   ASSERT_NO_THROW(TQueue<int> q(3));
@@ -38,7 +38,7 @@ TEST(Queue, can_pull)
     q.Pull();
     EXPECT_EQ(1, q.IsEmpty());
 }
-
+*/
 
 /*
 TEST(TBitField, can_clear_bit)

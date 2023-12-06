@@ -1,6 +1,6 @@
+#pragma once
 #include <iostream>
-#include "Tlistiterator.h"
-
+#include "Tlistnode.h"
 template <class T>
 
 class TList
@@ -18,7 +18,7 @@ public:
   void PushEnd(T* d);
   void DeleteBegin();
   void DeleteEnd();
-  TListIterator<T> GetBegin();
-  TList<T>& operator=(const TList<T>& p)
+  TList<T>& operator=(const TList<T>& p);
+  void Clear();
 };
 

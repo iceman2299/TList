@@ -1,6 +1,6 @@
+#pragma once
 #include <iostream>
 #include "Tlist.h"
-#include "Tlistnode.h"
 
 
 
@@ -68,12 +68,14 @@ TList<T>::~TList()
   end = nullptr;
   count = 0;
 }
-
+/*
 template<class T>
 TList<T>::TList(const TList<T>& p)
 {
+  begin = p.begin;
+  end = p.end;
   count = p.count;
-}
+}*/
 
 template <class T>
 void TList<T>::PushBegin(T* d)
@@ -119,8 +121,18 @@ TList<T>& TList<T>::operator=(const TList<T>&p)
   return this;
 }
 
+
+
 template <class T>
-TListIterator<T> TList<T>::GetBegin()
+void TList<T>::Clear()
 {
-  return TListIterator<T>(*this, begin);
+  TListNode<T> fel = this->begin;
+  for (int i = 0; i < count; i++)
+  {
+    TListNode<T> sel = fel;
+    fel = this->next;
+    delete sel;
+  }
+  begin = nullptr;
+  end = nullptr;
 }

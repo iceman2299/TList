@@ -6,7 +6,7 @@
 
 TEST(Stack, can_create_Stack_with_positive_length)
 {
-    ASSERT_NO_THROW(TStack<int> q(3));
+    ASSERT_NO_THROW(TList<int> q(3));
 }
 
 

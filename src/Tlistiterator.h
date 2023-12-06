@@ -1,14 +1,15 @@
+#pragma once
 #include <iostream>
-#include "Tlistnode.h"
-template <class T>
+#include "Tlist.h"
 
+template <class T>
 class TListIterator
 {
 protected:
   TList<T>& list;
-  TListNode<T>* arr;
+  TListNode<T>* cur;
 public:
-  TListIterator(TList<T>& l,TListNode<T>* p);
+  TListIterator(TList<T>& l, TListNode<T>* p);
   TListIterator(const TListIterator<T>& p);
   TListIterator(TListIterator<T>&& p);
   ~TListIterator();
@@ -22,5 +23,8 @@ public:
   void PushBefore(T* a);
   void Delete();
   T* operator*();
+
+  TListIterator<T> GetBegin();
+  TListIterator<T> GetEnd();
 };
 
